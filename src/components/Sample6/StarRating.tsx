@@ -1,6 +1,3 @@
-// components/StarRating.tsx
-'use client';
-
 import { StarIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -16,7 +13,7 @@ export function StarRating({ id, value, onChange }: StarRatingProps) {
   };
 
   return (
-    <div className='flex space-x-1'>
+    <div className='flex space-x-1' key={id}>
       {[...Array(5)].map((_, index) => (
         <button
           key={index}

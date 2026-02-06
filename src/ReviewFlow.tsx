@@ -49,9 +49,9 @@ const ReviewFlow: React.FC<ReviewFlowProps> = ({
   const progress = ((currentStep + 1) / questions.length) * 100;
   const currentQuestion = questions[currentStep];
   const isLastQuestion = currentStep === questions.length - 1;
-  const hasAnswer =
-    answers[currentQuestion.id] !== undefined &&
-    answers[currentQuestion.id] !== '';
+  // const hasAnswer =
+  //   answers[currentQuestion.id] !== undefined &&
+  //   answers[currentQuestion.id] !== '';
 
   const handleAnswer = (questionId: string, value: any) => {
     setAnswers((prev) => ({
@@ -77,7 +77,7 @@ const ReviewFlow: React.FC<ReviewFlowProps> = ({
     const hasAtLeastOneAnswer =
       Object.keys(answers).length > 0 &&
       Object.values(answers).some(
-        (val) => val !== undefined && val !== '' && val !== null
+        (val) => val !== undefined && val !== '' && val !== null,
       );
 
     if (!hasAtLeastOneAnswer) {

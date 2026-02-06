@@ -45,34 +45,34 @@ const ReviewExample = () => {
   ];
 
   // Example 2: Product Review
-  const productQuestions: Question[] = [
-    {
-      id: 'quality',
-      type: 'star',
-      title: 'Rate the product quality',
-      required: true,
-    },
-    {
-      id: 'value',
-      type: 'star',
-      title: 'Rate the value for money',
-    },
-    {
-      id: 'issue',
-      type: 'yesno',
-      title: 'Did you experience any issues?',
-    },
-    {
-      id: 'description',
-      type: 'text',
-      title: 'Describe your experience in one sentence',
-    },
-    {
-      id: 'details',
-      type: 'textarea',
-      title: 'Tell us more about your experience',
-    },
-  ];
+  // const productQuestions: Question[] = [
+  //   {
+  //     id: 'quality',
+  //     type: 'star',
+  //     title: 'Rate the product quality',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'value',
+  //     type: 'star',
+  //     title: 'Rate the value for money',
+  //   },
+  //   {
+  //     id: 'issue',
+  //     type: 'yesno',
+  //     title: 'Did you experience any issues?',
+  //   },
+  //   {
+  //     id: 'description',
+  //     type: 'text',
+  //     title: 'Describe your experience in one sentence',
+  //   },
+  //   {
+  //     id: 'details',
+  //     type: 'textarea',
+  //     title: 'Tell us more about your experience',
+  //   },
+  // ];
 
   const handleComplete = (data: Record<string, any>) => {
     console.log('Review submitted:', data);

@@ -72,83 +72,83 @@ const SinglePageReviewExample = () => {
   ];
 
   // Example: Short Product Review
-  const productReview: Question[] = [
-    {
-      id: 'product_rating',
-      type: 'star',
-      title: 'Rate this product',
-      required: true,
-    },
-    {
-      id: 'reviewer_name',
-      type: 'text',
-      title: 'Your name',
-      required: true,
-    },
-    {
-      id: 'review_title',
-      type: 'text',
-      title: 'Review title',
-      description: 'Sum up your experience in one line',
-    },
-    {
-      id: 'review_text',
-      type: 'textarea',
-      title: 'Your review',
-      description: 'Tell others what you think about this product',
-      required: true,
-    },
-    {
-      id: 'would_recommend',
-      type: 'yesno',
-      title: 'Would you recommend this product?',
-    },
-  ];
+  // const productReview: Question[] = [
+  //   {
+  //     id: 'product_rating',
+  //     type: 'star',
+  //     title: 'Rate this product',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'reviewer_name',
+  //     type: 'text',
+  //     title: 'Your name',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'review_title',
+  //     type: 'text',
+  //     title: 'Review title',
+  //     description: 'Sum up your experience in one line',
+  //   },
+  //   {
+  //     id: 'review_text',
+  //     type: 'textarea',
+  //     title: 'Your review',
+  //     description: 'Tell others what you think about this product',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'would_recommend',
+  //     type: 'yesno',
+  //     title: 'Would you recommend this product?',
+  //   },
+  // ];
 
   // Example: Event Registration & Feedback
-  const eventForm: Question[] = [
-    {
-      id: 'full_name',
-      type: 'text',
-      title: 'Full Name',
-      required: true,
-    },
-    {
-      id: 'email_address',
-      type: 'text',
-      title: 'Email Address',
-      required: true,
-    },
-    {
-      id: 'attendance',
-      type: 'yesno',
-      title: 'Will you be attending the event?',
-      required: true,
-    },
-    {
-      id: 'session_preference',
-      type: 'choice',
-      title: 'Which session interests you most?',
-      options: [
-        'Opening Keynote',
-        'Technical Workshop A',
-        'Technical Workshop B',
-        'Panel Discussion',
-        'Networking Session',
-        'Closing Remarks',
-      ],
-    },
-    {
-      id: 'dietary_requirements',
-      type: 'text',
-      title: 'Any dietary requirements?',
-    },
-    {
-      id: 'expectations',
-      type: 'textarea',
-      title: 'What are you hoping to learn or achieve?',
-    },
-  ];
+  // const eventForm: Question[] = [
+  //   {
+  //     id: 'full_name',
+  //     type: 'text',
+  //     title: 'Full Name',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'email_address',
+  //     type: 'text',
+  //     title: 'Email Address',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'attendance',
+  //     type: 'yesno',
+  //     title: 'Will you be attending the event?',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'session_preference',
+  //     type: 'choice',
+  //     title: 'Which session interests you most?',
+  //     options: [
+  //       'Opening Keynote',
+  //       'Technical Workshop A',
+  //       'Technical Workshop B',
+  //       'Panel Discussion',
+  //       'Networking Session',
+  //       'Closing Remarks',
+  //     ],
+  //   },
+  //   {
+  //     id: 'dietary_requirements',
+  //     type: 'text',
+  //     title: 'Any dietary requirements?',
+  //   },
+  //   {
+  //     id: 'expectations',
+  //     type: 'textarea',
+  //     title: 'What are you hoping to learn or achieve?',
+  //   },
+  // ];
 
   const handleComplete = (data: Record<string, any>) => {
     console.log('Single Page Form submitted:', data);

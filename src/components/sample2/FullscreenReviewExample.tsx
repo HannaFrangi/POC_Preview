@@ -51,72 +51,72 @@ const FullscreenReviewExample = () => {
   ];
 
   // Example: Product Review
-  const productQuestions: Question[] = [
-    {
-      id: 'quality',
-      type: 'star',
-      title: 'How would you rate the product quality?',
-      required: true,
-    },
-    {
-      id: 'meets_expectations',
-      type: 'yesno',
-      title: 'Did the product meet your expectations?',
-    },
-    {
-      id: 'price_rating',
-      type: 'scale',
-      title: 'How would you rate the value for money?',
-      min: 1,
-      max: 5,
-    },
-    {
-      id: 'review',
-      type: 'textarea',
-      title: 'Tell us about your experience',
-      description: 'Write a brief review of the product',
-    },
-  ];
+  // const productQuestions: Question[] = [
+  //   {
+  //     id: 'quality',
+  //     type: 'star',
+  //     title: 'How would you rate the product quality?',
+  //     required: true,
+  //   },
+  //   {
+  //     id: 'meets_expectations',
+  //     type: 'yesno',
+  //     title: 'Did the product meet your expectations?',
+  //   },
+  //   {
+  //     id: 'price_rating',
+  //     type: 'scale',
+  //     title: 'How would you rate the value for money?',
+  //     min: 1,
+  //     max: 5,
+  //   },
+  //   {
+  //     id: 'review',
+  //     type: 'textarea',
+  //     title: 'Tell us about your experience',
+  //     description: 'Write a brief review of the product',
+  //   },
+  // ];
 
   // Example: Event Feedback
-  const eventQuestions: Question[] = [
-    {
-      id: 'event_rating',
-      type: 'star',
-      title: 'How would you rate this event?',
-    },
-    {
-      id: 'organization',
-      type: 'scale',
-      title: 'How well was the event organized?',
-      description: 'Rate from 1 to 10',
-      min: 1,
-      max: 10,
-    },
-    {
-      id: 'best_part',
-      type: 'choice',
-      title: 'What was the best part of the event?',
-      options: [
-        'Keynote Speakers',
-        'Networking Opportunities',
-        'Workshop Sessions',
-        'Venue & Facilities',
-        'Food & Refreshments',
-        'Overall Atmosphere',
-      ],
-    },
-    {
-      id: 'attend_again',
-      type: 'yesno',
-      title: 'Would you attend a similar event in the future?',
-    },
-    {
-      id: 'comments',
-      type: 'textarea',
-      title: 'Any additional comments or suggestions?',
-    },
-  ];
+  // const eventQuestions: Question[] = [
+  //   {
+  //     id: 'event_rating',
+  //     type: 'star',
+  //     title: 'How would you rate this event?',
+  //   },
+  //   {
+  //     id: 'organization',
+  //     type: 'scale',
+  //     title: 'How well was the event organized?',
+  //     description: 'Rate from 1 to 10',
+  //     min: 1,
+  //     max: 10,
+  //   },
+  //   {
+  //     id: 'best_part',
+  //     type: 'choice',
+  //     title: 'What was the best part of the event?',
+  //     options: [
+  //       'Keynote Speakers',
+  //       'Networking Opportunities',
+  //       'Workshop Sessions',
+  //       'Venue & Facilities',
+  //       'Food & Refreshments',
+  //       'Overall Atmosphere',
+  //     ],
+  //   },
+  //   {
+  //     id: 'attend_again',
+  //     type: 'yesno',
+  //     title: 'Would you attend a similar event in the future?',
+  //   },
+  //   {
+  //     id: 'comments',
+  //     type: 'textarea',
+  //     title: 'Any additional comments or suggestions?',
+  //   },
+  // ];
 
   const handleComplete = (data: Record<string, any>) => {
     console.log('Fullscreen Review submitted:', data);

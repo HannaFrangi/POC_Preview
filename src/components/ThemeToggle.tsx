@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Moon, Sun } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -9,7 +9,7 @@ const ThemeToggle = () => {
     // Check for saved theme preference or default to light mode
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
     const prefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
+      '(prefers-color-scheme: dark)',
     ).matches;
 
     const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');

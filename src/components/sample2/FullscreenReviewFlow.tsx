@@ -33,8 +33,6 @@ interface FullscreenReviewFlowProps {
 
 const FullscreenReviewFlow: React.FC<FullscreenReviewFlowProps> = ({
   questions,
-  title = "We'd love your feedback",
-  description = 'Help us improve by answering a few questions',
   brandColor = '#6366f1', // Default indigo
   onComplete,
   onClose,
