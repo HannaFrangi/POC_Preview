@@ -1,9 +1,15 @@
+import { Toaster } from '@/components/ui/sonner';
+import ThemeToggle from './components/ThemeToggle';
+import AppNav from './routes/routes';
+
 export function App() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="font-medium">Hello World</div>
+    <div className='min-h-screen bg-background'>
+      <ThemeToggle />
+      <AppNav />
+      <Toaster />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
